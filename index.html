@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Scratch Project ✨</title>
+    <link rel="stylesheet" href="./src/style/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-slate-50">
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-7  mx-2" id="myNav">
+        <div>
+            <img src="./src/assets/Batman-Logo.png" alt="Logo" class="h-8 cursor-pointer">
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-4">
+            <a href="#" class="text-white">Info</a>
+            <a href="./src/web/catalog/index.html" class="text-white">Catalog</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menuBtn" class="text-white focus:outline-none z-[100]">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobileMenu" class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 hidden md:hidden z-30">
+        <div
+            class="h-screen w-1/2 bg-gradient-to-b from-stone-50 to-stone-200 opacity-90 transform translate-x-full transition duration-300 ease-in-out">
+            <ul class="flex flex-col items-start p-4 space-y-4">
+                <li><a href="#" class="text-gray-800 hover:text-violet-600">Info</a></li>
+                <li><a href="./src/web/catalog/index.html" class="text-gray-800 hover:text-violet-600">Catalog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-cover bg-center h-screen" id="myHero"
+        style="background-image: url(https://i.redd.it/campfire-cooking-in-another-world-with-my-absurd-skill-2023-v0-s7aofh8xytoa1.png?width=1920&format=png&auto=webp&s=0f029441e82d5e5b74d78e5927b02b0737703517)">
+        <div class="flex flex-col items-center justify-center h-full text-white text-center">
+            <h1 class="text-4xl font-bold mb-4 mx-2 drop-shadow-lg">Welcome to My Website</h1>
+            <p class="text-lg mx-2 sm:mx-0 drop-shadow-lg text-center px-16">
+                <span
+                    class="before:block before:absolute before:-inset-1 before:-skew-y-1 before:bg-sky-500 relative inline-block hover:before:skew-y-1 hover:before:transition hover:before:duration-150 hover:before:ease-in-out">
+                    <span class="relative text-white ">Website Jualan makanan animeh dijamin jadi animeh, masuk ke
+                        isekai.</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row rounded-3xl m-10">
+        <div class="md:w-1/2 ">
+            <img src="https://images4.alphacoders.com/130/1308489.jpg" alt="Gambar"
+                class="w-full h-auto rounded-md md:rounded-e-none ">
+        </div>
+        <div
+            class="md:w-1/2 flex flex-col justify-center bg-gradient-to-r from-sky-500 to-indigo-500 p-5 rounded-md mt-5 md:mt-0 md:rounded-s-none">
+            <p
+                class=" md:text-xl text-sm font-semibold text-white first-letter:text-6xl first-letter:font-serif first-letter:mr-2 first-letter:float-left  ">
+                Yuk cobain berbagai jajanan animeh sekarang</p>
+            <div class="flex flex-row items-center pb-10 md:pb-0">
+
+                <button
+                    class="mt-4 px-4 py-2 bg-slate-50 text-slate-800 font-bold rounded hover:bg-sky-500 hover:text-slate-100 focus:outline-none w-1/2 "
+                    onclick="klikCatalog()">Catalog</button>
+                <div class="w-3 h-3 md:w-5 md:h-5 md:ml-4 bg-white rounded-full mt-4 ml-2 hover:bg-sky-500" id="bulet1">
+                </div>
+                <div class="w-3 h-3 md:w-5 md:h-5 md:ml-4 bg-white rounded-full mt-4 ml-2 hover:bg-sky-400" id="bulet2">
+                </div>
+                <div class="w-3 h-3 md:w-5 md:h-5 md:ml-4 bg-white rounded-full mt-4 ml-2 hover:bg-sky-300" id="bulet3">
+                </div>
+                <div class="w-20 h-5 bg-white rounded-full mt-4 ml-4 hover:bg-sky-200" id="bulet4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center m-5">
+
+        <span
+            class="before:block before:absolute before:-inset-1 before:-skew-y-1 hover:before:skew-y-1 hover:before:transition hover:before:duration-150 hover:before:ease-in-out before:bg-sky-500 relative inline-block ">
+            <span class="relative text-white font-bold text-lg">Apa kata temen temen kita</span></span>
+    </div>
+
+    <div class="carousel carousel-end rounded-box m-10">
+        <div class="carousel-item">
+            <div class="max-w-lg rounded overflow-hidden shadow-lg flex flex-row items-center bg-slate-100 mr-4">
+                <img class="rounded-full w-1/2 h-1/2 aspect-auto mb-10" src="./src/assets/Komentar_Sanji.jpg"
+                    alt="Card Image">
+                <div class="flex flex-col">
+
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-black">Sanji Marjan</div>
+                        <p class="text-gray-700 text-base">Makanan di sini sangat enak sampai buat saya mati 10x</p>
+                    </div>
+                    <div class=" ml-3 pt-4 pb-2">
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-yellow-300 active:bg-yellow-300 focus:bg-yellow-300 focus:ring-4 focus:ring-yellow-100">👍Likes</button>
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-rose-500 active:bg-rose-500 focus:bg-rose-500 focus:ring-4 focus:ring-rose-200">❤️Loves</button>
+                        <div
+                            class="border-solid border-r-slate-800 border-r-[32px] border-y-transparent border-y-[32px] border-l-0 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="carousel-item">
+            <div class="max-w-lg rounded overflow-hidden shadow-lg flex flex-row items-center bg-slate-100 mr-4">
+                <img class="rounded-full w-1/2 h-1/2 aspect-auto mb-10" src="./src/assets/Komentar_luffy.jpg"
+                    alt="Card Image">
+                <div class="flex flex-col">
+
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-black">Monyet Diahaha Luffy</div>
+                        <p class="text-gray-700 text-base">Uenakk poll pokok e mantap!!!</p>
+                    </div>
+                    <div class=" ml-3 pt-4 pb-2">
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-yellow-300 active:bg-yellow-300 focus:bg-yellow-300 focus:ring-4 focus:ring-yellow-100">👍Likes</button>
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-rose-500 active:bg-rose-500 focus:bg-rose-500 focus:ring-4 focus:ring-rose-200">❤️Loves</button>
+                        <div
+                            class="border-solid border-r-slate-800 border-r-[32px] border-y-transparent border-y-[32px] border-l-0 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="max-w-lg rounded overflow-hidden shadow-lg flex flex-row items-center bg-slate-100 mr-4">
+                <img class="rounded-full w-1/2 h-1/2 aspect-auto mb-10" src="./src/assets/Komentar_Eren.jpg"
+                    alt="Card Image">
+                <div class="flex flex-col">
+
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-black">Eren Cagar Alam</div>
+                        <p class="text-gray-700 text-base">Warung nomer 1 di semesta alam</p>
+                    </div>
+                    <div class=" ml-3 pt-4 pb-2">
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-yellow-300 active:bg-yellow-300 focus:bg-yellow-300 focus:ring-4 focus:ring-yellow-100">👍Likes</button>
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-rose-500 active:bg-rose-500 focus:bg-rose-500 focus:ring-4 focus:ring-rose-200">❤️Loves</button>
+                        <div
+                            class="border-solid border-r-slate-800 border-r-[32px] border-y-transparent border-y-[32px] border-l-0 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="max-w-lg rounded overflow-hidden shadow-lg flex flex-row items-center bg-slate-100 mr-4">
+                <img class="rounded-full w-1/2 h-1/2 aspect-auto mb-10" src="./src/assets/Komentar_Marshajpg.jpg"
+                    alt="Card Image">
+                <div class="flex flex-col">
+
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-black">Ayang bebeb</div>
+                        <p class="text-gray-700 text-base">dijamin kalo beli di sini ketemu husbando/waifu kalian </p>
+                    </div>
+                    <div class=" ml-3 pt-4 pb-2">
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-yellow-300 active:bg-yellow-300 focus:bg-yellow-300 focus:ring-4 focus:ring-yellow-100">👍Likes</button>
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-rose-500 active:bg-rose-500 focus:bg-rose-500 focus:ring-4 focus:ring-rose-200">❤️Loves</button>
+                        <div
+                            class="border-solid border-r-slate-800 border-r-[32px] border-y-transparent border-y-[32px] border-l-0 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="max-w-lg rounded overflow-hidden shadow-lg flex flex-row items-center bg-slate-100 mr-4">
+                <img class="rounded-full w-1/2 h-1/2 aspect-auto mb-10" src="./src/assets/Komentar_Lola.jpg"
+                    alt="Card Image">
+                <div class="flex flex-col">
+
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-black">Lohh heh spo kih?</div>
+                        <p class="text-gray-700 text-base">ga usah komen langsung coba aja</p>
+                    </div>
+                    <div class=" ml-3 pt-4 pb-2">
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-yellow-300 active:bg-yellow-300 focus:bg-yellow-300 focus:ring-4 focus:ring-yellow-100">👍Likes</button>
+                        <button
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer hover:bg-rose-500 active:bg-rose-500 focus:bg-rose-500 focus:ring-4 focus:ring-rose-200">❤️Loves</button>
+                        <div
+                            class="border-solid border-r-slate-800 border-r-[32px] border-y-transparent border-y-[32px] border-l-0 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-gray-800 text-white py-12 bg-no-repeat bg-cover bg-center"
+        style="background-image: url(./src/assets/footer.jpg);">
+        <div class="container mx-auto flex items-center justify-center">
+            <div class="ml-6">
+                <h1 class="text-4xl md:text-6xl font-bold drop-shadow-xl">Terimakasih udah mengunjungi website saya</h1>
+                <h4 class="mt-4 text-lg drop-shadow-xl">created by : Muhammad Alif Mujaddid</h4>
+                <h6 class="mt-4 text-xs drop-shadow-xl">Noted : for best experience open in desktop</h6>
+                <button class="mt-6 px-4 py-2 bg-sky-500 text-white font-semibold rounded hover:bg-sky-700"
+                    id="openBtn">Contac
+                    Me</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <div id="modal" class="hidden fixed inset-0 flex items-center justify-center">
+            <div class="bg-white p-6 max-w-sm mx-auto rounded shadow-md">
+                <button id="closeBtn" class=" mr-auto text-gray-500 hover:text-gray-700">×</button>
+                <h1>Mau kontak saya?</h1>
+                <h3>ciee kepo</h3>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
